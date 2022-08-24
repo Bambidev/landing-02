@@ -4,8 +4,8 @@
 
 :root {
     --font: 'Poppins';
-    --secundario: rgb(255, 77, 0);
-    --principal: rgb(28, 27, 49);
+    --secundario: rgb(42, 0, 252);
+    --principal: rgb(0, 154, 250);
 }
 
 * {
@@ -18,13 +18,23 @@
 }
 
 .home {
-    background-image: url(./assets/wall.jpg);
+    background-image: url(./assets/wallpaper.png);
     height: 100vh;
     background-size: cover;
     background-position: center center;
 }
 
 /* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0rem 1rem;
+    backdrop-filter: blur(700px);
+    border-bottom: 2px solid var(--principal);
+
+}
 
 .header-logo {
     display: flex;
@@ -33,7 +43,7 @@
 }
 
 .logo-name {
-    color: rgb(255, 77, 0);
+    color: var(--principal);
     font-size: 25px;
 }
 
@@ -43,26 +53,15 @@
 
 .logo {
     max-width: 70px;
-    padding: 1rem 0rem;
+    padding: .5rem 0rem;
 }
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-    padding: 0rem 1rem;
-}
-
-@media (min-width: 768px) {
-    .header {
-      padding: 0rem 2rem;
-    }
-  }
 
 .nav {
     display: flex;
     gap: 2rem;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav a {
@@ -74,8 +73,125 @@
 .nav a:hover {
     border-bottom: 1px solid white;
     transition: border 1s ease-in-out;
-    color: rgb(255, 77, 0);
+    color: var(--principal);
 }
+
+/* Hero */
+
+.front {
+   display: flex;
+   margin: 10% 0px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.hero {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub {
+    margin-top: 20px;
+    width: 60%;
+    color: rgb(255, 255, 255);
+}
+
+.beneficio {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.274);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    padding: 10px;
+}
+
+.beneficio p, .beneficio span {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero-btn {
+    margin-top: 30px;
+}
+
+.banner {
+    max-width: 800px;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.principal {
+    background-color: var(--principal);
+}
+
+.secundario {
+    background-color: var(--secundario);
+}
+
+/* Servicios */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios h3 {
+    font-size: 26px;
+    margin-top: 20px;
+    color: gray;
+    width: 80%;
+    text-align: center;
+}
+
+
 
 
 
