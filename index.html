@@ -18,8 +18,14 @@
     <header class="header">
         <div class="header-logo">
             <img class="logo" src="./assets/logo1.png" alt="logo">
-            <h3 class="logo-name">Bambi<span>VPN</span></h3>
+            <h3 class="logo-name">Bambi<span class="logo-name-span">VPN</span></h3>
         </div>
+
+        <label class="menu" for="menu-toggle">
+            <img src="./assets/hambur.svg" alt="hambur">
+        </label>
+
+        <input type="checkbox" id="menu-toggle">
 
         <nav class="nav">
             <ul>
@@ -44,44 +50,52 @@
             </ul>
         </nav>
 
-        <a class="btn principal" href="#">Comenzar!</a>
+        <a class="btn principal btn-nav" href="#">Comenzar!</a>
+        
     </header>
 
     <section class="front">
+
         <div class="hero">
             <div class="hero-info">
-                <h1>La velocidad mas rapida del planeta!</h1>
+                <h1>La velocidad mas rapida del <span class="hero-tittle-effect">Mundo!</span> </h1>
                 <div class="sub">
                     <p>Conectate cuando quieras a donde sea, ser invisible en la red nunca fue tan facil!.</p>
                     <p>Evita la discriminación por paises y accede a contenido oculto</p>
                 </div>
-                <div class="beneficio">
-                    <span>🛡️</span>
-                    <span>|</span>
-                    <p>Seguridad Garantizada!</p>
-                </div>
-                <div class="beneficio">
-                    <span>⚡</span>
-                    <span>|</span>
-                    <p>La mas rapida!</p>
-                </div>
-                <div class="beneficio">
-                    <span>💸</span>
-                    <span>|</span>
-                    <p>Accesible!</p>
-                </div>
-                <div class="beneficio">
-                    <span>🌎​</span>
-                    <span>|</span>
-                    <p>Opciones en todo el mundo!</p>
-                </div>
-
-                <div class="hero-btn">
-                    <a class="btn principal" href="#">😎​ Comenzar!</a>
-                    <a class="btn secundario" href="#">Planes</a>
+                <div class="opciones">
+                    <div class="beneficio">
+                        <span>🛡️</span>
+                        <span>|</span>
+                        <p>Seguridad Garantizada!</p>
+                    </div>
+                    <div class="beneficio">
+                        <span>⚡</span>
+                        <span>|</span>
+                        <p>La mas rapida!</p>
+                    </div>
+                    <div class="beneficio">
+                        <span>💸</span>
+                        <span>|</span>
+                        <p>Accesible!</p>
+                    </div>
+                    <div class="beneficio">
+                        <span>🌎​</span>
+                        <span>|</span>
+                        <p>Opciones en todo el mundo!</p>
+                    </div>
+    
+                    <div class="hero-btn">
+                        <a class="btn principal btn-hero-principal" href="#">😎​ Comenzar!</a>
+                        <a class="btn secundario btn-hero-secundario" href="#">Planes</a>
+                    </div>
                 </div>
             </div>
-            <img class="banner" src="./assets/banner.webp" alt="banner">
+
+            <div class="banner-container">
+                <img class="banner" src="./assets/front.png" alt="banner">
+            </div>
+            
         </div>  
     </section>
         

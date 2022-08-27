@@ -1,7 +1,136 @@
-@media (min-width: 768px) {
-    .header {
-      padding: 0rem 2rem;
-    }
-
-    
+@media (max-width: 1400px) {
+  .banner {
+    max-width: 500px;
   }
+
+  .hero-info {
+    width: 100%;
+  }
+
+  .hero {
+    width: 95%;
+    text-align: center;
+  }
+
+  .hero-info {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beneficios {
+    width: 100%;
+  }
+
+  .opciones {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .opciones {
+    width: 70%;
+  }
+
+ 
+}
+
+@media (max-width: 1300px) {
+  .opciones {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .opciones {
+    margin-top: 40px;
+    width: 60%;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+  
+  .banner {
+    max-width: 100px;
+  }
+
+  .menu {
+    display: flex;
+    z-index: 3;
+  }
+
+  .menu img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    right: -100;
+    flex-direction: column;
+    backdrop-filter: blur(100px);
+    border-radius: 20px 0px 20px 20px;
+    width: 60%;
+    height: 100%;
+    padding: 45px 0px;
+    z-index: 2;
+    display: none;
+    transition: right 0.5s ease-in;
+  }
+
+  .nav a {
+    font-weight: 700;
+    font-size: 26px;
+  }
+
+  .banner-container {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .hero {
+    width: 100%;
+    min-width: none;
+  }
+
+  .opciones {
+    width: 90%;
+  }
+
+  .hero-info h1 {
+    font-size: 42px;
+    line-height: 60px;
+    width: 80%;
+  }
+
+  .sub {
+    width: 80%;
+  }
+
+  .nav {
+    width: 70%;
+  }
+
+  .nav a {
+    font-size: 32px;
+  }
+
+  .hero-tittle-effect {
+    font-size: 20;
+    padding: 5px 15px;
+  }
+
+  .beneficio p{
+    font-size: 16px;
+  }
+}
