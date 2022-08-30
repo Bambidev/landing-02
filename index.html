@@ -11,6 +11,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaqueries.css">
+    <script src="https://kit.fontawesome.com/2eea87095b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="home"><!-- Walppaper -->
@@ -22,7 +23,7 @@
         </div>
 
         <label class="menu" for="menu-toggle">
-            <img src="./assets/hambur.svg" alt="hambur">
+            <i class="fa-solid fa-bars fa-2xl"></i>
         </label>
 
         <input type="checkbox" id="menu-toggle">
@@ -87,7 +88,7 @@
     
                     <div class="hero-btn">
                         <a class="btn principal btn-hero-principal" href="#">😎​ Comenzar!</a>
-                        <a class="btn secundario btn-hero-secundario" href="#">Planes</a>
+                        <a class="btn secundario btn-hero-secundario" href="#seleccion">📋 Planes</a>
                     </div>
                 </div>
             </div>
@@ -99,20 +100,230 @@
         </div>  
     </section>
         
-     </div> <!-- fIN HERO  -->
+    </div> <!-- fIN HERO  -->
     
     <main>
-        <section class="servicios">
+        <section class="lema">
             <h3>"Somos una empresa dedicada a la navegacion segura de los usuarios"</h3>
         </section>
 
-        <section class="clientes">
+        <section class="servicios">
+            <div class="duracion">
+                <h3>Selecciona el plan perfecto</h3>
+                <div class="duracion-opciones">
+                    <button class="opcion-btn">Plan de 1 Año</button>
+                    <button class="opcion-btn active">Plan Mensual</button>
+                    <button class="opcion-btn">Plan de 6 meses</button>
+                </div>
+            </div>
+            <div class="servicios-container">
+                <div class="card">
+                    <div class="card-container">
+                        <img src="" alt="">
+                        <p>Ahorras el 5%</p>
+                        <div class="card-info-mid">
+                            <p class="plan standard">Standard</p>
+                            <h3>8US$<span class="precio-span">/m</span></h3>
+                        </div>
+                        <p class="card-info-beneficios">Beneficios:</p>
+                        <div class="card-info-bot">
+                            <div class="acceso">
+                                <span>🌍</span>
+                                <span class="separador">|</span>
+                                <p>16 Paises</p>
+                            </div>
 
+                            <div class="acceso">
+                                <span>💻​​</span>
+                                <span class="separador">|</span>
+                                <p>1 Dispositivos</p>
+                            </div>
+
+                            <div class="acceso">
+                                <span>🎬​</span>
+                                <span class="separador">|</span>
+                                <p>Netflix</p>
+                            </div>
+
+                            <div class="acceso">
+                                <span>🔒</span>
+                                <span class="separador">|</span>
+                                <p>Seguridad</p>
+                            </div>
+                        </div>
+                        <button id="seleccion" class="opcion-btn seleccion">Seleccionar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="marco-recomendado">
+                        <h4>Best Seller!</h4>
+                        <div class="card-container">
+                            <img src="" alt="">
+                            <p>Ahorras el 20%</p>
+                            <div class="card-info-mid">
+                                <p class="plan completo">Completo</p>
+                                <h3>12US$<span class="precio-span">/m</span></h3>
+                            </div>
+                            <p class="card-info-beneficios">Beneficios:</p>
+                            <div class="card-info-bot">
+                                <div class="acceso">
+                                    <span>🌍</span>
+                                    <span class="separador">|</span>
+                                    <p>32 Paises</p>
+                                </div>
+
+                                <div class="acceso">
+                                    <span>💻​​</span>
+                                    <span class="separador">|</span>
+                                    <p>3 Dispositivos</p>
+                                </div>
+
+                                <div class="acceso">
+                                    <span>🎬​</span>
+                                    <span class="separador">|</span>
+                                    <p>Netflix</p>
+                                </div>
+
+                                <div class="acceso">
+                                    <span>🔒</span>
+                                    <span class="separador">|</span>
+                                    <p>Seguridad</p>
+                                </div>
+                            </div>
+                            <button id="seleccion" class="opcion-btn seleccion">Seleccionar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                        <div class="card-container">
+                            <img src="" alt="">
+                            <p>Ahorras el 40%</p>
+                            <div class="card-info-mid">
+                                <p class="plan gold">Full</p>
+                                <h3>20US$<span class="precio-span">/m</span></h3>
+                            </div>
+                            <p class="card-info-beneficios">Beneficios:</p>
+                            <div class="card-info-bot">
+                                <div class="acceso">
+                                    <span>🌍</span>
+                                    <span class="separador">|</span>
+                                    <p>61 Paises</p>
+                                </div>
+
+                                <div class="acceso">
+                                    <span>💻​​</span>
+                                    <span class="separador">|</span>
+                                    <p>6 Dispositivos</p>
+                                </div>
+
+                                <div class="acceso">
+                                    <span>🎬​</span>
+                                    <span class="separador">|</span>
+                                    <p>Netflix - Prime</p>
+                                </div>
+
+                                <div class="acceso">
+                                    <span>🔒</span>
+                                    <span class="separador">|</span>
+                                    <p>Seguridad</p>
+                                </div>
+                            </div>
+                            <button id="seleccion" class="opcion-btn seleccion">Seleccionar</button>
+                        </div>
+                </div>
+            </div>
         </section>
 
         <section class="contacto">
+            <h3>Contacto</h3>
 
+            <div class="contacto-container">
+                <div class="left-contac">
+                    <div class="redes">
+                        <h4>Nuestras Redes</h4>
+                        <div class="redes-container">
+                            <div class="red">
+                                <div class="icon-red">
+                                    <i class="fa-brands fa-instagram fa-lg"></i>
+                                </div>
+                                <a>Instagram</a>
+                            </div>
+                            <div class="red">
+                                <div class="icon-red">
+                                    <i class="fa-brands fa-twitter fa-lg"></i>
+                                </div>
+                                <a>Twitter</a>
+                            </div>
+                            <div class="red">
+                                <div class="icon-red">
+                                    <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                                </div>
+                                <a>Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="direccion-container">
+                        <h4>Puerto Madero, <span>Buenos Aires</span></h4>
+                        <div class="direccion">
+                            <div class="icon-red">
+                                <i class="fa-solid fa-location-pin"></i>
+                            </div>
+                            <p>Azucena Villaflor 559</p>
+                        </div>
+                        <div class="direccion">
+                            <div class="icon-red">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <p>bambivpn@gmail.com</p>
+                        </div>
+                        <div class="direccion">
+                            <div class="icon-red">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+                            <p>011 589 7202</p>
+                        </div>
+                    </div>   
+                </div>
+
+                <div class="right-contac">
+                    <div class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6816880603365!2d-58.362450482556156!3d-34.61220979999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d81e1516a7%3A0x74137fc8f3fb0ea!2sAzucena%20Villaflor%20559%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661858679776!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+       <div class="nav-footer">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="">Inicio</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Servicios</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Clientes</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+       </div>
+       <div class="separador separador-footer"></div>
+       <div class="copy">
+            <p>2022 Copyright de Surfshark. Reservados todos los derechos.</p>
+       </div>
+    </footer>
 </body>
 </html>

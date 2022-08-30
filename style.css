@@ -89,9 +89,9 @@
 .nav a {
     background-image: linear-gradient(
       to right,
-      #54b3d6,
-      #54b3d6 50%,
-      #ffff 50%
+      #ffffff,
+      #ffffff 50%,
+      rgb(207, 207, 207) 50%
     );
     background-size: 200% 100%;
     background-position: -100%;
@@ -106,7 +106,7 @@
   
   .nav a:before{
     content: '';
-    background: #54b3d6;
+    background: #ffffff;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -190,11 +190,11 @@
     border: 1px solid rgba(255, 255, 255, 0.308);
     padding: 10px;
     margin-left: 0;
-    transition: margin-left 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .beneficio:hover {
-    margin-left: 2rem;
+    transform: translateX(20px);
 }
 
 .beneficio p, .beneficio span {
@@ -248,7 +248,7 @@ main {
     align-items: center;
 }
 
-.servicios {
+.lema {
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -256,7 +256,7 @@ main {
     align-items: center;
 }
 
-.servicios h3 {
+.lema h3 {
     font-size: 26px;
     margin-top: 20px;
     color: gray;
@@ -273,6 +273,259 @@ main {
     right: 0;
     transition: right 0.5s ease-in;
 }
+
+/* Servicios */
+
+.servicios {
+    background-image: url(./assets/wallpaper.png);
+    height: 100vh;
+    width: 100%;
+}
+
+.duracion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 0px;
+}
+.duracion h3 {
+    font-size: 36px;
+    color: white;
+}
+
+.duracion-opciones {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.opcion-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--terciario);
+    color: white;
+}
+
+.opcion-btn:hover {
+    background-color: var(--principal);
+    color: white;
+    cursor: pointer;
+}
+
+
+.servicios-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.marco-recomendado {
+    background: rgb(151,139,236);
+    background: linear-gradient(180deg, rgba(151,139,236,1) 0%, rgba(98,82,215,1) 34%);
+    padding: 10px 5px 5px 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: var(--principal);
+}
+
+.marco-recomendado h4 {
+    color: white;
+    padding: 5px 0px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card-container {
+    padding: 10px;
+    background-color: white;
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan {
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100%;
+    color: white;
+    padding: 7px 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.completo { background-color: #6252d7;}
+.standard { background-color: var(--principal);}
+.gold {background-color: rgb(255, 136, 0);}
+
+.card-info-mid h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.precio-span {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.seleccion {
+    width: 80%;
+    background-color: var(--principal);
+    margin: 10px 0px;
+}
+
+.card-info-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+}
+
+.acceso {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+
+.separador {
+    color: rgb(184, 184, 184);
+}
+
+.card-info-beneficios {
+    margin: 10px 0px;
+}
+
+/* Medios de pago */
+
+.contacto {
+    padding: 60px 0px;
+}
+
+.contacto h3 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.contacto-container {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.left-contac {
+    display: flex;
+    gap: 100px;
+    background-image: url(./assets/wallpaper.png);
+    padding: 30px;
+    border-radius: 20px;
+    background-position: center center;
+    align-items: center;
+
+}
+
+.redes {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.redes h4 {
+    font-weight: 600;
+}
+
+.icon-red {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.red,.direccion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    text-align: left;
+    align-items: center;
+}
+
+.red a:hover {
+    cursor: pointer;
+}
+
+
+.direccion p, .direccion i {
+    color: #b9b9b9;
+}
+
+.direccion-container h4 {
+    color: white;
+    font-weight: 500;
+    width: 70%;
+}
+
+.direccion-container h4 > span {
+    font-weight: 300;
+}
+
+.footer {
+    height: 20vh;
+    background-color: rgb(0, 5, 75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #b9b9b9;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+} 
+
+.copy p {
+    font-size: 14px;
+}
+
+.separador-footer {
+    height: 2px;
+    background-color: #b9b9b93f;
+    width: 80%;
+}
+
 
 
 
